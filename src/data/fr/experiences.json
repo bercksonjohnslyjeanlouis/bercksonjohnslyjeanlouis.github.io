@@ -1,0 +1,62 @@
+[
+
+  {
+    "id" : 4,
+    "title": "Webmaster en chef",
+    "icon": "fa-solid fa-briefcase services",
+    "institution": "BEE CREATIVE",
+    "link": "https://shop.beecreativehaiti.com/",
+    "year": "(Depuis 02/2023)",
+    "tasks": [
+      "Création, édition et mise-à-jour des différents sites web de l'entreprise",
+      "Campagne SEO",
+      "Formation TIC",
+      "Mise en page des publications (support papier, synchronisation avec le site internet etc.)",
+      "Réalisation d'autres tâches compatibles avec mes compétences"
+    ]
+  },
+
+  {
+   "id" : 3,
+    "title": "Enseignant SNT",
+    "icon": "fa-solid fa-briefcase services",
+    "institution": "ECOLE FIERBOUT",
+    "link": "/",
+    "year": "(03/2022 - 06/2022)",
+    "tasks": [
+      "Initiation à la programmation robotique à l’École Fierbout",
+    "Initiation à la programmation robotique au Collège Daniel Petit-Frère de Limonade"
+    ]
+  },
+
+  {
+    "id" : 2,
+    "title": "Chef de Projet Digital",
+    "icon": "fa-solid fa-briefcase services",
+    "institution": "QUID HAITI",
+    "link": "https://web.facebook.com/quidhaiti",
+    "year": "(Depuis 01/2022)",
+    "tasks":[
+    "Vice-coordonnateur de l'organisation",
+      "Coordonnateur de l'axe responsable de la Recherche, Technologie et Education",
+      "Directeur du département de technologie",
+      "Management des projets et responsable QUID LAB"]
+  },
+
+  {
+   "id" :1 ,
+    "title": "Coordonnateur",
+    "icon": "fa-solid fa-briefcase services",
+    "institution": "JEUNE PENSEUR",
+    "link": "https://jeunepenseurofficiel.blogspot.com",
+    "year": "(Depuis 06/2018)",
+    "tasks": ["Coordination des principales activités",
+      "Mise en place des stratégies",
+      "Gestion de projet",
+      "Suivi et évaluations des résultats",
+      "Community Manager",
+      "Administration du blog"
+      ]
+  }
+
+]

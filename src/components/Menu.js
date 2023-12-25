@@ -1,14 +1,22 @@
-// src/components/layout.js
 import React from "react";
-const Menu = ({ children }) => {
+import options from "../data/fr/menu.json"
+import {Link} from "gatsby";
+
+
+const Menu = () => {
     return (
         <div>
-            <header>...</header>
-            {/* Page content */}
-            {children}
-            {/* Your shared footer */}
-            <footer>...</footer>
+            <ul>
+            {options.map((option, index) => {
+                return <li>
+                    <Link to={option.link}>
+                        {option.anchor}
+                    </Link>
+                </li>
+            })}
+            </ul>
         </div>
-    );
-};
+    )
+}
+
 export default Menu;

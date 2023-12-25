@@ -1,0 +1,92 @@
+[
+  {
+    "id": 3,
+    "name": "Conception et Déploiement de Réseaux Informatiques",
+    "icon": "fa-solid fa-award",
+    "university": "ISOC",
+    "link": "/",
+    "year": "(Janvier 2023)",
+    "courses": []
+  },
+  {
+    "id": 4,
+    "name": "Transformation Digitale inclusive pour la réalisation des ODD",
+    "icon": "fa-solid fa-award",
+    "university": "ITU",
+    "link": "/",
+    "year": "(Décembre 2022)",
+    "courses": []
+  },
+  {
+    "id": 5,
+    "name": "Python 3, Des fondamentaux aux concepts avancés du langage",
+    "icon": "fa-solid fa-award",
+    "university": "UCA",
+    "link": "/",
+    "year": "(Décembre 2021)",
+    "courses": []
+  },
+  {
+    "id": 6,
+    "name": "Management Responsable",
+    "icon": "fa-solid fa-award",
+    "university": "ULAVAL",
+    "link": "/",
+    "year": "(Novembre 2021)",
+    "courses": []
+  },
+  {
+    "id": 7,
+    "name": "Initiation à l'enseignement des Sciences Numériques & Technologie",
+    "icon": "fa-solid fa-award",
+    "university": "INRIA",
+    "link": "/",
+    "year": "(Novembre 2021)",
+    "courses": []
+  },
+  {
+    "id": 8,
+    "name": "Gestion des Ressources Humaines",
+    "icon": "fa-solid fa-award",
+    "university": "UFCH",
+    "link": "/",
+    "year": "(Octobre 2021)",
+    "courses": []
+  },
+  {
+    "id": 9,
+    "name": "Gestion Axée sur les Résultats",
+    "icon": "fa-solid fa-award",
+    "university": "UNICEF",
+    "link": "/",
+    "year": "(Septembre 2021)",
+    "courses": []
+  },
+  {
+    "id": 10,
+    "name": "Les fondamentaux du Marketing Digital",
+    "icon": "fa-solid fa-award",
+    "university": "GOOGLE",
+    "link": "/",
+    "year": "(Juillet 2021)",
+    "courses": []
+  },
+  {
+    "id": 11,
+    "name": "Workforce Collaboration and Development",
+    "icon": "fa-solid fa-award",
+    "university": "YLAI",
+    "link": "/",
+    "year": "(Octobre 2019)",
+    "courses": []
+  },
+  {
+    "id": 12,
+    "name": "Employabilité",
+    "icon": "fa-solid fa-award",
+    "university": "PUSH",
+    "link": "/",
+    "year": "(Septembre 2019)",
+    "courses": []
+  }
+]

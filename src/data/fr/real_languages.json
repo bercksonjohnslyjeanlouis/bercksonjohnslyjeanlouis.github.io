@@ -1,0 +1,21 @@
+ [
+    {
+     "id" : 1,
+      "name": "Francais & Créole",
+      "level": "Langues Natales",
+      "stars": ["fas fa-star", "fas fa-star", "fas fa-star", "fas fa-star", "fas fa-star"]
+    },
+    {
+     "id" : 2,
+      "name": "Anglais",
+      "level": "Intermediaire",
+      "stars": ["fas fa-star", "fas fa-star"]
+    },
+    {
+     "id" : 3,
+      "name": "Espagnol",
+      "level": "Débutant",
+      "stars": ["fas fa-star", "fas fa-star-half"]
+    }
+  ]
+

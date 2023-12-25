@@ -1,0 +1,38 @@
+[
+
+  {
+    "id" : 2,
+    "name": "Sciences Informatiques",
+    "icon": "fas fa-graduation-cap services",
+    "university": "UEH | CHC-UEH-L",
+    "link": "https://chcl.ueh.edu.ht/",
+    "year": "(2017 - 2023)",
+    "courses" : [
+      "Gestion et Sécurité des Systèmes d’Information",
+      "Administration Windows Server",
+      "Fondement Des Ordinateurs",
+      "Algorithme et Instructions de Base",
+      "Programmation C#, JAVA, PHP, PYTHON",
+      "Gestion de Projet Informatiques",
+      "Administration Base de Données MySQL et Oracle"
+    ]
+  },
+
+  {
+    "id" : 1,
+    "name": "Sciences de Gestion",
+    "icon": "fas fa-graduation-cap services",
+    "university": "UEH | FDSEG-CAP",
+    "link": "https://web.facebook.com/people/UEHFaculte-de-Droit-des-Sces-Econ-et-de-Gest-du-Cap-Haitien/100057223370635",
+    "year": "(2017 - 2022)",
+    "courses" : [
+      "Gestion des Ressources Humaines",
+      "Comportement Organisationnel",
+      "Marketing Général" ,
+      "Introduction à la Sociologie",
+      "Gestion de Projet"
+
+    ]
+  }
+
+]

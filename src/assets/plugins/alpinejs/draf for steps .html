@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"
+      defer="true"
+    ></script>
+    <script src="https://unpkg.com/alpinejs-steps@latest/dist/steps.bundle.min.js"></script>
+  </head>
+  <body>
+    <section>
+      <h3>Basic usage</h3>
+
+      <div x-data="steps(['first step', 'second step', 'third step'])">
+        <div>
+          <div x-show="isActive('first step')">first step</div>
+          <div x-show="isActive('second step')">second step</div>
+          <div x-show="isActive('third step')">third step</div>
+        </div>
+        <div>
+          <button x-on:click="transitionToPrevious()" type="button">
+            Previous
+          </button>
+          <button x-on:click="transitionToNext()" type="button">Next</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.addEventListener("alpine:init", () => {
+        Alpine.data("steps", AlpineSteps.StepsComponent);
+      });
+    </script>
+  </body>
+</html>

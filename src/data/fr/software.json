@@ -1,0 +1,36 @@
+[
+
+
+  {
+    "id":	2,
+    "name": "Illustrator",
+    "icon": "devicon-illustrator-plain",
+    "percent" : "50"
+  },
+
+  {
+    "id":	4,
+    "icon": "devicon-photoshop-line",
+    "name": "Photoshop"	,
+    "percent" : "91"
+  },
+  {
+    "id":	1,
+    "name": "Canva",
+    "icon": "devicon-canva-original",
+    "percent" : "30"
+  },
+
+
+  {
+    "id":	2,
+    "name": "Figma",
+    "icon": "devicon-figma-plain",
+    "percent" : "50"
+  }
+
+
+
+]
+
+

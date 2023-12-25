@@ -1,16 +1,15 @@
 import React from "react"
-import Navbar from "./Menu"
+import Navbar from "./Navbar"
 import Footer from "./Footer"
-
-import "normalize.css"
-import "../assets/css/main.css"
+import Menu from "./Menu";
 
 const Layout = ({ children }) => {
     return (
         <>
-            <Navbar />
+
+            <Menu />
             {children}
-            <Footer />
+
         </>
     )
 }
