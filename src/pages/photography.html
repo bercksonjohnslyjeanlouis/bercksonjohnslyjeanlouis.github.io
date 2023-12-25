@@ -1,0 +1,74 @@
+<section class="about section" x-cloak
+         x-init="$store.database.get_photos(); to_top()"
+         x-data="{ current_category : null }"
+>
+    <div class="section-inner-g">
+        <div class="content width-full" x-show="$store.database.loaded_photos">
+                <div class="d-flex justify-content-center align-items-center text-center pt-2 pb-4 ps-2">
+                    <button @click="current_category  = null"  class="mx-1"
+                            :class="current_category === null ? 'btn btn-cta-primary-1' : 'btn btn-cta-primary-2'"
+                    >
+                        *
+                    </button>
+                    <template x-for="category in $store.database.photos_categories">
+                        <button x-text="category"
+                                class="mx-1"
+                                @click="current_category = category"
+                                :class="current_category === category ? 'btn btn-cta-primary-1' : 'btn btn-cta-primary-2'"
+                        >
+                        </button>
+                    </template>
+                </div>
+
+                <div class="row gy-3 gy-md-2 bsb-project-pro-1-grid px-0 mx-0" id="photos_viewer">
+
+                    <template class="" x-for="photo in $store.database.filter_photos(current_category)">
+                        <div class="col-12 col-md-6 mx-0 mb-4 px-0 align-items-center d-flex justify-content-center align-items-center text-center">
+                            <div>
+                                <div class="width-full">
+                                    <div class="width-100" x-data="{i_load:false}"  style="text-align: center">
+                                        <div class="loader pt-4" x-show="!i_load">
+                                            <div class="loader-wheel"></div>
+                                            <div class="loader-text"></div>
+                                        </div>
+                                        <img class="card-img-top border border-1 border-gray rounded rounded-2" :title="photo.description"
+                                             :src="photo.image" x-show="i_load"
+                                             :alt="photo.description"  @load="i_load = true"
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col" style="display:none">
+                                    <div class="overflow-hidden flex-nowrap width-full" style="text-align: center">
+                                            <span class="mb-1 text-center py-2">
+                                                <span x-text="photo.description" style="text-align: justify"
+                                                      class="text-reset"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </template>
+
+                </div>
+
+        </div>
+
+        <div class="my-3 d-flex justify-content-center align-items-center text-center">
+            <div class="loader" x-show="!$store.database.loaded_photos">
+                <div class="loader-wheel"></div>
+                <div class="loader-text"></div>
+            </div>
+        </div>
+
+        <div class="my-3 d-flex justify-content-center align-items-center text-center">
+            <a
+                    class="btn btn-cta-primary"
+                    href="https://www.linkedin.com/in/bercksonjohnslyjeanlouis">
+                CONSULTER MON PROFIL LINKEDIN
+            </a>
+        </div>
+
+    </div>
+
+</section>

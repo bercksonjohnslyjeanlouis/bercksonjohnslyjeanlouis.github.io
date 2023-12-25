@@ -1,0 +1,34 @@
+<section class="about section" x-data
+         x-cloak x-init="$store.database.get_testimonials();
+          $store.database.get_menu(); to_top()"
+>
+  <div class="section-inner-g">
+    <div class="content" id="temoignage">
+      <template x-for="testimonial in $store.database.testimonials">
+        <div class="item mb-5">
+          <blockquote class="quote">
+            <p>
+              <i class="fas fa-quote-left"></i>
+              <span x-text="testimonial.comment" style="text-align: justify"></span>
+            </p>
+          </blockquote>
+          <p class="source">
+            <strong><span x-text="testimonial.name" class="nam"></span></strong>
+            <br />
+            <em><span x-text="testimonial.title" class="titl"></span></em>
+          </p>
+        </div><!--//item-->
+      </template>
+
+      <div class="my-3 d-flex justify-content-center align-items-center text-center">
+        <a
+                class="btn btn-cta-primary"
+                href="https://www.linkedin.com/in/bercksonjohnslyjeanlouis/details/recommendations/?detailScreenTabIndex=0">
+          VOIR PLUS SUR LINKEDIN
+        </a>
+      </div>
+
+    </div><!--//content-->
+  </div><!--//section-inner-->
+</section><!--//section-->
+

@@ -1,0 +1,143 @@
+<section class="about section "
+         x-cloak  x-data x-init="$store.database.get_services(); $store.database.get_menu(); to_top()">
+    <div class="section-inner-g">
+
+        <div class="content" x-show="$store.database.loaded_services"
+             style="text-align: justify;">
+            <div class="row" style="display: flex; flex-wrap: wrap;">
+
+                    <div class="card col-12 col-md-6 mx-0 mx-1 mb-3 d-flex
+                     justify-content-center align-items-center text-center">
+                        <div>
+                            <div class="width-full" style="text-align: center; display: none">
+                                <div class="width-100 py-3" style="text-align: center">
+                                    <i :class="service.icon"
+                                       style="text-align: center; font-size: 60px">
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="overflow-hidden flex-nowrap width-full"
+                                     style="text-align: center">
+                                    <h1 class="mb-1 text-center py-2">
+                                        <span class="text-reset"> + 10</span>
+                                    </h1>
+                                    <p>Applications Web et Logicielles</p>
+                                    <p style="text-align: center">
+                                        <a x-link href="/portfolio/development" class="btn-1 btn-cta-primary-1">
+                                            Voir mes projets
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                <div class="card col-12 col-md-6 mx-0 mx-1 mb-3 d-flex
+                justify-content-center align-items-center text-center">
+                    <div>
+                        <div class="width-full" style="text-align: center; display: none">
+                            <div class="width-100 py-3" style="text-align: center">
+                                <i :class="service.icon"
+                                   style="text-align: center; font-size: 60px">
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="overflow-hidden flex-nowrap width-full"
+                                 style="text-align: center">
+                                <h1 class="mb-1 text-center py-2">
+                                    <span class="text-reset"> + 200</span>
+                                </h1>
+                                <p>Conceptions Graphiques</p>
+                                <p style="text-align: center">
+                                    <a x-link href="/portfolio/design" class="btn-1 btn-cta-primary-1">
+                                        Voir mes conceptions
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card col-12 col-md-6 mx-0 mx-1 mb-3 d-flex
+                 justify-content-center align-items-center text-center">
+                    <div>
+                        <div class="width-full" style="text-align: center; display: none">
+                            <div class="width-100 py-3" style="text-align: center">
+                                <i :class="service.icon"
+                                   style="text-align: center; font-size: 60px">
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="overflow-hidden flex-nowrap width-full"
+                                 style="text-align: center">
+                                <h1 class="mb-1 text-center py-2">
+                                    <span class="text-reset"> + 50</span>
+                                </h1>
+                                <p>Photos De Tout Genre</p>
+                                <p style="text-align: center">
+                                    <a x-link href="/portfolio/photography" class="btn-1 btn-cta-primary-1">
+                                        Voir mes photographies
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card col-12 col-md-6 mx-0 mx-1 mb-3 d-flex
+                 justify-content-center align-items-center text-center">
+                    <div>
+                        <div class="width-full" style="text-align: center; display: none">
+                            <div class="width-100 py-3" style="text-align: center">
+                                <i :class="service.icon"
+                                   style="text-align: center; font-size: 60px">
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="overflow-hidden flex-nowrap width-full"
+                                 style="text-align: center">
+                                <h1 class="mb-1 text-center py-2">
+                                    <span class="text-reset"> + 15</span>
+                                </h1>
+                                <p>Événements Auxquels J'ai Participé</p>
+                                <p style="text-align: center">
+                                    <a x-link href="/events" class="btn-1 btn-cta-primary-1">
+                                        Voir les événements
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="my-3 d-flex justify-content-center align-items-center text-center">
+                <a x-link
+                   class="btn btn-cta-primary"
+                   href="https://www.linkedin.com/in/bercksonjohnslyjeanlouis">
+                    CONSULTER MON PROFIL LINKEDIN
+                </a>
+            </div>
+
+        </div><!--//content-->
+
+        <div class="my-3 d-flex justify-content-center align-items-center text-center">
+            <div class="loader" x-show="!$store.database.loaded_services">
+                <div class="loader-wheel"></div>
+                <div class="loader-text"></div>
+            </div>
+        </div>
+    </div><!--//section-inner-->
+</section><!--//section-->
+

@@ -1,0 +1,82 @@
+
+
+<section class="about section" x-data="{ visiblePosts: 4 }"
+         x-cloak x-init="$store.database.get_posts(); to_top();$store.database.get_menu();">
+    <div class="section-inner-g">
+        <div class="content" x-show="$store.database.loaded_posts" >
+            <div class="row d-flex gap-3">
+                <template x-for="post in $store.database.posts.slice(0, visiblePosts)">
+                    <div class="card col-12 col-md-6 p-0 mb-4 animate-box" data-animate-effect="fadeInLeft">
+                        <a :href="post.link" class="m-0 p-0" x-data="{i_load:false}" >
+                                <div class="width-100 d-flex justify-content-center align-items-center text-center"
+                                     style="text-align: center">
+                                    <div class="loader pt-4" x-show="!i_load">
+                                        <div class="loader-wheel"></div>
+                                        <div class="loader-text"></div>
+                                    </div>
+                                </div>
+
+                            <img class="card-img-top m-0 p-0" :title="post.description"
+                                 :src="post.image" x-show="i_load"
+                                 :alt="post.description"  @load="i_load = true"
+                            >
+                        </a>
+                        <div class="card-body">
+                            <a class="ti" :href="post.link" style="text-decoration: none;">
+                                <h5 class="card-title" x-text="post.title"></h5>
+                            </a>
+                            <p class="card-text text-justify" style="text-align: justify" x-text="post.summary"></p>
+                            <p>
+                                <template x-for="tag in post.tags">
+                                    <em class="" x-text="'#'+tag+'  '"></em>&nbsp;&nbsp;
+                                    <small>&nbsp;</small>
+                                </template>
+                            </p>
+                            <div class="card-text d-flex justify-content-between text-muted">
+                                <!--											<div><i class="fas fa-language"></i><small x-text="' '+post.language"></small></div>-->
+                                <div><i class="fa-solid fa-folder"></i>&nbsp;<small x-text="' '+post.category"></small></div>
+                                <div><i :class="post.icon"></i>&nbsp;<small x-text="' '+post.source"></small></div>
+                                <div><i class="fas fa-calendar-alt"></i>&nbsp;<small x-text="' '+post.date"></small></div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <div class="my-3 d-flex justify-content-center align-items-center text-center">
+                <button x-show="visiblePosts<$store.database.posts.length"
+                        class="btn btn-cta-primary" @click="visiblePosts += 4">
+                    VOIR PLUS D'ARTICLES +
+                </button>
+            </div>
+
+            <div class="my-3 d-flex justify-content-center align-items-center text-center">
+                <a x-show="visiblePosts>=$store.database.posts.length"
+                        class="btn btn-cta-primary"
+                   href="https://www.linkedin.com/newsletters/berckson-johnsly-jean-louis-7029083089146400768">
+                    ABONNEZ-VOUS À MON BLOG
+                </a>
+            </div>
+
+        </div><!--//content-->
+        <div class="my-3 d-flex justify-content-center align-items-center text-center">
+            <div class="loader" x-show="!$store.database.loaded_posts">
+                <div class="loader-wheel"></div>
+                <div class="loader-text"></div>
+            </div>
+        </div>
+    </div><!--//section-inner-->
+
+    <aside class="blog aside section" style="display: none">
+        <div class="section-inner shadow-sm rounded">
+            <h2 class="heading" id="blog">Derniers Articles</h2><hr>
+            <div class='sk-ww-rss-feed' data-embed-id='221351'></div>
+            <script src='https://widgets.sociablekit.com/rss-feed/widget.js' async defer></script>
+            <div id="rss-feed" class="content">
+            </div><!--//content-->
+        </div><!--//section-inner-->
+    </aside><!--//section-->
+
+
+</section><!--//section-->
+

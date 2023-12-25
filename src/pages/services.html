@@ -1,0 +1,57 @@
+<section class="about section "
+         x-cloak  x-data x-init="$store.database.get_services(); $store.database.get_menu(); to_top()">
+    <div class="section-inner-g">
+
+        <div class="content" x-show="$store.database.loaded_services"
+             style="text-align: justify;">
+            <div class="row" style="display: flex; flex-wrap: wrap;">
+                <template x-for="service in $store.database.services">
+                    <div class="card col-12 col-md-6 mx-0 mx-1 mb-3 align-items-center d-flex justify-content-center align-items-center text-center">
+<div>
+                                <div class="width-full" style="text-align: center">
+                                    <div class="width-100 py-3" style="text-align: center">
+                                        <i :class="service.icon"
+                                           style="text-align: center; font-size: 60px">
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="overflow-hidden flex-nowrap width-full"
+                                         style="text-align: center">
+                                        <h5 class="mb-1 text-center py-2">
+                                            <span x-text="service.name" class="text-reset"></span>
+                                        </h5>
+                                        <p x-text="service.description"></p>
+                                        <p style="text-align: center">
+                                            <a :href="service.link" class="btn-1 btn-cta-primary-1">
+                                                Commandez maintenant
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+</div>
+
+
+                    </div>
+                </template>
+            </div>
+
+            <div class="my-3 d-flex justify-content-center align-items-center text-center">
+                <a x-link
+                   class="btn btn-cta-primary"
+                   href="/portfolio">
+                    CONSULTER MON PORTFOLIO
+                </a>
+            </div>
+
+        </div><!--//content-->
+
+        <div class="my-3 d-flex justify-content-center align-items-center text-center">
+            <div class="loader" x-show="!$store.database.loaded_services">
+                <div class="loader-wheel"></div>
+                <div class="loader-text"></div>
+            </div>
+        </div>
+    </div><!--//section-inner-->
+</section><!--//section-->
+

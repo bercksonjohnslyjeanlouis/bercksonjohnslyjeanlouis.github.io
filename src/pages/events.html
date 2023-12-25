@@ -1,0 +1,70 @@
+<section class="about section"
+         x-cloak x-data="{ visible_events : 4 }"
+         x-init="$store.database.get_events(); $store.database.get_menu(); to_top() ">
+    <div class="section-inner-g">
+        <div class="content" x-show="$store.database.loaded_events">
+
+            <div class="row d-flex gap-3 pt-2">
+                <template x-for="event in $store.database.events.slice(0, visible_events)">
+                    <div class="card col-12 col-md-6 p-0 mb-4">
+                        <a :href="event.link" class="m-0 p-0" x-data="{i_load:false}" >
+                            <div class="width-100 d-flex justify-content-center align-items-center text-center"
+                                 style="text-align: center">
+                                <div class="loader pt-4" x-show="!i_load">
+                                    <div class="loader-wheel"></div>
+                                    <div class="loader-text"></div>
+                                </div>
+                            </div>
+
+                            <img class="card-img-top m-0 p-0" :title="event.title"
+                                 :src="event.image" x-show="i_load"
+                                 :alt="event.title"  @load="i_load = true"
+                            >
+                        </a>
+                        <div class="card-body">
+                            <a  class="ti" :href="event.link" style="text-decoration: none">
+                                <h5 class="card-title" x-text="event.title"></h5>
+                            </a>
+                            <div class="postcard__subtitle small">
+                                <i class="fas fa-calendar-alt mx-2"></i>
+                                <small x-text="event.date"></small>
+                            </div>
+                            <div class="postcard__bar"></div>
+
+                            <p class="card-text text-justify pt-2" style="text-align: justify" x-text="event.description"></p>
+
+                            <div class="card-text d-flex justify-content-between text-muted">
+                                <div><i class="fa-solid fa-folder"></i>&nbsp;<span x-text="' '+event.type"></span></div>
+                                <div><i class="fa-solid fa-house-chimney-user"></i>&nbsp;<span x-text="' '+event.institution"></span></div>
+                                <div><i class="fa-solid fa-location-dot"></i>&nbsp;<span x-text="' '+event.location"></span></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <div class="my-3 d-flex justify-content-center align-items-center text-center">
+                <button x-show="visible_events<$store.database.events.length"
+                        class="btn btn-cta-primary" @click="visible_events+=4">
+                    VOIR PLUS D'ÉVÉNEMENTS +
+                </button>
+            </div>
+
+            <div class="my-3 d-flex justify-content-center align-items-center text-center">
+                <a x-show="visible_events>=$store.database.events.length"
+                   class="btn btn-cta-primary"
+                   href="https://www.linkedin.com/in/bercksonjohnslyjeanlouis">
+                    CONSULTER MON PROFIL LINKEDIN
+                </a>
+            </div>
+
+        </div><!--//content-->
+        <div class="my-3 d-flex justify-content-center align-items-center text-center">
+            <div class="loader" x-show="!$store.database.loaded_events">
+                <div class="loader-wheel"></div>
+                <div class="loader-text"></div>
+            </div>
+        </div>
+    </div><!--//section-inner-->
+</section><!--//section-->
