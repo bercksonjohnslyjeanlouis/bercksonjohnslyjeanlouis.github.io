@@ -1,6 +1,6 @@
 import React from "react";
 import options from "../data/fr/menu.json"
-import {Link} from "gatsby";
+import {graphql, Link} from "gatsby";
 
 
 const Menu = () => {
@@ -18,5 +18,8 @@ const Menu = () => {
         </div>
     )
 }
+
+
+
 
 export default Menu;
