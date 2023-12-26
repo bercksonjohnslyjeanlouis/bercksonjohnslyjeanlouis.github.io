@@ -4,11 +4,9 @@
   "private": true,
   "description": "jlbj.github.io",
   "author": "Berckson Johnsly JEAN-LOUIS",
-
   "keywords": [
     "gatsby"
   ],
-
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -17,15 +15,16 @@
     "clean": "gatsby clean",
     "deploy": "gatsby build && gh-pages -d public -b main"
   },
-
   "dependencies": {
     "gatsby": "^5.13.0",
+    "gatsby-plugin-image": "^3.13.0",
+    "gatsby-plugin-sharp": "^5.13.0",
     "gatsby-source-filesystem": "^5.13.0",
     "gatsby-transformer-json": "^5.13.0",
+    "gatsby-transformer-sharp": "^5.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
