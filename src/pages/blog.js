@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from "../components/Layout";
 import posts from "../data/fr/posts.json"
 
-const News = () => {
+const Blog = () => {
     return (
         <Layout>
             <div>
@@ -23,6 +23,6 @@ const News = () => {
     )
 }
 
-export default News
+export default Blog
 
 export const Head = () => <title>BLOG</title>
