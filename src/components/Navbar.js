@@ -1,15 +1,16 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link} from 'gatsby';
 import Menu from "./Menu";
 
 const Navbar = () => {
+
     return (
         <nav
             style={{
                 backgroundColor: '#f5f5f5',
                 margin: 0,
                 padding: 0,
-                borderBottom: '#000000 solid 2px',
+                borderBottom: '#000000 solid 2px shadow',
             }}
         >
             <div
@@ -29,11 +30,6 @@ const Navbar = () => {
                     }}
                 >
           <span className="ms-3 ms-md-5">
-            <strong>
-              <Link to="/" style={{ textDecoration: 'none' }}>
-                Berckson Johnsly JEAN-LOUIS
-              </Link>
-            </strong>
             <strong>
               <Link to="/" style={{ textDecoration: 'none' }}>
                 &lt; Bienvenue sur mon site /&gt;

@@ -14,7 +14,13 @@ const Menu = () => {
     return (
         <>
 
-            <Button onClick={handleShow} ><i className={'fas fa-bars text-black'}></i> </Button>
+            <Button onClick={handleShow}
+                    style={ { backgroundColor: '#f5f5f5',
+                        cursor: 'pointer',
+                        color: '#000000' } }
+            >
+                <i className={'fas fa-bars text-black'}></i>
+            </Button>
 
             <Offcanvas  show={show} placement="start" tabIndex="-1" id="side_menu" onHide={handleClose} aria-labelledby="offcanvasLabel">
                 <Offcanvas.Header closeButton>
