@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjlbj_github_io=self.webpackChunkjlbj_github_io||[]).push([[501],{5791:function(e,t,l){l.r(t),l.d(t,{Head:function(){return c}});var n=l(7294),u=l(1450);t.default=()=>n.createElement(u.Z,null,n.createElement("div",null,n.createElement("h1",null,"Contact")));const c=()=>n.createElement("title",null,"Contact")}}]);
+//# sourceMappingURL=component---src-pages-contact-js-271acaf759c3e966b8f9.js.map
