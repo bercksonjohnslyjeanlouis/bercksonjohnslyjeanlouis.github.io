@@ -1,32 +1,51 @@
 import React, {useState} from "react";
 import options from "../data/fr/menu.json"
+import { Offcanvas, Accordion,Button } from 'react-bootstrap';
 import {Link} from "gatsby";
 
 
 
 
 const Menu = () => {
+    const [show, setShow]=useState(false)
+    const handleClose=()=>setShow(false)
+    const handleShow=()=>setShow(true)
 
     return (
-        <div>
-            <ul className={"ps-2 list-unstyled"} id={"menu"} >
+        <>
 
-                {options.map((option, index) => {
-                    return(
-                        <li id={index}
-                            className={"accordion-item border-bottom border-gray border-1 py-2"}>
-                            <Link to={option.link}>
-                                <i className={option.icon}></i>
-                                <span className={"ps-2"}>
-                                    {option.anchor.toUpperCase()}
-                                </span>
-                            </Link>
-                        </li>
-                    )
-                })}
+            <Button onClick={handleShow} ><i className={'fas fa-bars text-black'}></i> </Button>
 
-            </ul>
-        </div>
+            <Offcanvas  show={show} placement="start" tabIndex="-1" id="side_menu" onHide={handleClose} aria-labelledby="offcanvasLabel">
+                <Offcanvas.Header closeButton>
+                    <Offcanvas.Title id="offcanvasLabel">MENU</Offcanvas.Title>
+                </Offcanvas.Header>
+
+                <Offcanvas.Body>
+                    <div>
+                        {options.map((option, index) => (
+                            <div
+                                key={index}
+                                className="border-bottom border-gray border-1 py-2">
+                                    <a href={option.link}
+                                        className="text-decoration-none width-full"
+                                        data-bs-toggle="offcanvas"
+                                        data-bs-target="#side_menu">
+                                          <span>
+                                                <i className={option.icon}></i>
+                                                <strong>
+                                                  <span className="ps-2">{`  ${option.anchor.toUpperCase()}`}</span>
+                                                </strong>
+                                          </span>
+                                    </a>
+                            </div>
+                        ))}
+                    </div>
+                </Offcanvas.Body>
+            </Offcanvas>
+
+        </>
+
     )
 }
 
