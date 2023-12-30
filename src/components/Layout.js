@@ -19,7 +19,7 @@ import Profile from "./Profile";
 const Layout = ({ children, page, description, profile }) => {
     return (
         <>
-            <Navbar />
+            <Navbar profile={profile} ></Navbar>
             { profile ? (<Profile></Profile>) : (<Hero description={description} page={page}></Hero>)}
 
             <div className="container sections-wrapper">

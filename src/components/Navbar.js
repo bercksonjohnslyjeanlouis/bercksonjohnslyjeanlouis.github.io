@@ -2,7 +2,7 @@ import React from 'react';
 import { Link} from 'gatsby';
 import Menu from "./Menu";
 
-const Navbar = () => {
+const Navbar = ({profile}) => {
 
     return (
         <nav
@@ -32,7 +32,7 @@ const Navbar = () => {
           <span className="ms-3 ms-md-5">
             <strong>
               <Link to="/" style={{ textDecoration: 'none' }}>
-                &lt; Bienvenue sur mon site /&gt;
+                  { profile ? <span>&lt; Bienvenue sur mon site /&gt;</span> : <span>Berckson Johnsly JEAN-LOUIS</span> }
               </Link>
             </strong>
           </span>
