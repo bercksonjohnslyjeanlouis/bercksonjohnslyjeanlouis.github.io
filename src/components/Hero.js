@@ -4,14 +4,17 @@ import {Link} from "gatsby";
 
 const Hero = ({page,description}) => {
     return (
-        <div className="container-fluid pt-5 pb-0 mb-0 px-md-5">
-            <header className="section-header">
-                <h2>{page}</h2>
-                <p className="mt-3 text-center">
-                    {description}
-                </p>
-            </header>
-        </div>
+        <header style={{backgroundColor : 'white' }} className="section-header text-center mb-5 pt-4 pb-1">
+            <h3 className="text-uppercase text-black">
+                {page}
+            </h3>
+            {/*<div className="d-flex align-items-center text-center">*/}
+            {/*<div className="deco"></div>*/}
+            {/*</div>*/}
+            <p className="position-relative">
+                {description}
+            </p>
+        </header>
     )
 }
 
