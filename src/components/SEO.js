@@ -1,16 +1,40 @@
-import React from "react"
+import React from 'react';
+import icon from '../../static/images/main/favicon.jpg';
 
-import "../assets/plugins/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-import "../assets/css/styles1.css"
-import "../assets/plugins/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-import "../assets/plugins/fontawesome/css/all.css"
-import "../assets/css/styles1.css"
+const SEO = ({ title, description, image, url }) => {
+     return (
+     <>
+         <title>{title+' - Berckson Johnsly JEAN-LOUIS'}></title>
+         <meta name="description" content={description} />
+         <meta name="image" content={image} />
+         <link rel="shortcut icon" href={icon} />
 
-const SEO = ({title, description, image, url, icon }) => {
-    return(
-        <title>{title}</title>
-    )
-}
+         <link rel={"stylesheet" } href={"../assets/css/styles1.css"} />
+         <script defer src="../assets/plugins/fontawesome/js/all.js"></script>
 
+         {/* Open Graph */}
+         <meta property="og:title" content={title} />
+         <meta property="og:description" content={description} />
+         <meta property="og:image" content={image} />
+         <meta property="og:url" content={url} />
+         <meta property="og:type" content={'website'} />
+         <meta property="og:locale" content="en_US" />
+         <meta property="og:site_name" content={'Berckson Johnsly JEAN-LOUIS'} />
 
-export default SEO
+         {/* Twitter Card */}
+         <meta name="twitter:card" content="summary_large_image" />
+         <meta name="twitter:creator" content={'bercksonjohnsly'} />
+         <meta name="twitter:title" content={title} />
+         <meta name="twitter:description" content={description} />
+         <meta name="twitter:image" content={image} />
+         <meta property="twitter:domain" content="bercksonjohnslyjeanlouis.github.io" />
+         <meta property="twitter:url" content={url} />
+
+         {/* Other Meta Tags */}
+         <meta name="author" content={'Berckson Johnsly JEAN-LOUIS'} />
+         <link rel="canonical" href={url} />
+     </>
+     );
+};
+
+export default SEO;
