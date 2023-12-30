@@ -11,4 +11,4 @@ const Index = () => {
 
 export default Index
 
-export const Head = () => <SEO title={'Accueil'} ></SEO>
+export const Head = () => <SEO title={'Accueil'} description={'Berckson Johnsly JEAN-LOUIS'} ></SEO>

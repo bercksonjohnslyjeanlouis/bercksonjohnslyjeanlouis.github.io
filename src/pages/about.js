@@ -3,14 +3,18 @@ import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import Hero from "../components/Hero";
 import Profile from "../components/Profile";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Experience from "../components/Experience";
 
 
 const About = () => {
   return (
-      <Layout>
-          <Profile></Profile>
-          {/*<Hero page={'ABOUT'} description={"It's the about page"}></Hero>*/}
-      </Layout>
+      <>
+          <Layout description={'About me...'} page={'About'} profile={true}>
+          <Experience></Experience>
+          </Layout>
+      </>
 )
 }
 

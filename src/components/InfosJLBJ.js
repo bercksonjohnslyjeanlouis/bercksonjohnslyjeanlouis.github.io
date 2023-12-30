@@ -16,14 +16,14 @@ const InfosJLBJ = () => {
                         <li>
                             <i className="fas fa-envelope text-dark"></i>
                             <span className="sr-only">Email:</span>
-                            <a style={{ fontSize: '14px' }} href="mailto:bercksonjohnslyjeanlouis98@gmail.com">
+                            <a style={{ fontSize: '15px' }} href="mailto:bercksonjohnslyjeanlouis98@gmail.com">
                                 bercksonjohnslyjeanlouis98@gmail.com
                             </a>
                         </li>
                         <li>
                             <i className="fas fa-globe text-dark"></i>
                             <span className="sr-only">Website:</span>
-                            <a style={{ fontSize: '14px' }} href="https://www.bercksonjohnslyjeanlouis.github.io">
+                            <a style={{ fontSize: '15px' }} href="https://www.bercksonjohnslyjeanlouis.github.io">
                                 www.bercksonjohnslyjeanlouis.github.io
                             </a>
                         </li>

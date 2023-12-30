@@ -1,13 +1,12 @@
 import React from 'react';
-import icon from '../../static/images/main/favicon.jpg';
 
-const SEO = ({ title, description, image, url }) => {
+const SEO = ({ title, description, url }) => {
      return (
      <>
          <title>{title+' - Berckson Johnsly JEAN-LOUIS'}></title>
          <meta name="description" content={description} />
-         <meta name="image" content={image} />
-         <link rel="shortcut icon" href={icon} />
+         <meta name="image" content={'../../images/main/berckson.jpg'} />
+         <link rel="shortcut icon" href={'../../images/main/favicon.jpg'} />
 
          <link rel={"stylesheet" } href={"../assets/css/styles1.css"} />
          <script defer src="../assets/plugins/fontawesome/js/all.js"></script>
@@ -15,7 +14,7 @@ const SEO = ({ title, description, image, url }) => {
          {/* Open Graph */}
          <meta property="og:title" content={title} />
          <meta property="og:description" content={description} />
-         <meta property="og:image" content={image} />
+         <meta property="og:image" content={'../../images/main/berckson.jpg'} />
          <meta property="og:url" content={url} />
          <meta property="og:type" content={'website'} />
          <meta property="og:locale" content="en_US" />
@@ -26,7 +25,7 @@ const SEO = ({ title, description, image, url }) => {
          <meta name="twitter:creator" content={'bercksonjohnsly'} />
          <meta name="twitter:title" content={title} />
          <meta name="twitter:description" content={description} />
-         <meta name="twitter:image" content={image} />
+         <meta name="twitter:image" content={'../../images/main/berckson.jpg'} />
          <meta property="twitter:domain" content="bercksonjohnslyjeanlouis.github.io" />
          <meta property="twitter:url" content={url} />
 
