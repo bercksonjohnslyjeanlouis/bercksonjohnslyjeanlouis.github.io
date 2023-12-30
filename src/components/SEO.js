@@ -29,9 +29,14 @@ const SEO = ({ title, description, url }) => {
          <meta property="twitter:domain" content="bercksonjohnslyjeanlouis.github.io" />
          <meta property="twitter:url" content={url} />
 
+
          {/* Other Meta Tags */}
          <meta name="author" content={'Berckson Johnsly JEAN-LOUIS'} />
          <link rel="canonical" href={url} />
+
+         <script type='text/javascript'
+                 src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
+         </script>
      </>
      );
 };

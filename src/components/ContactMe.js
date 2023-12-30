@@ -5,7 +5,7 @@ const ContactMe = () => {
 
   return (
     <section className="github section contact-form">
-      <Container className="section-inner shadow-sm rounded">
+      <div className="section-inner shadow-sm rounded">
         <Form method="post" action="https://api.web3forms.com/submit">
           <input type="hidden" name="from_name" value="bercksonjohnslyjeanlouis.github.io" />
           <input type="hidden" name="subject" value="Notification" />
@@ -33,7 +33,7 @@ const ContactMe = () => {
             Écrivez-moi un message
           </Button>
         </Form>
-      </Container>
+      </div>
     </section>
   );
 };

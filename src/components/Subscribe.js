@@ -5,7 +5,7 @@ const SubscribeForm = () => {
 
     return (
         <aside className="credits aside section">
-            <Container className="section-inner shadow-sm rounded">
+            <div className="section-inner shadow-sm rounded">
                 <Form
                     action="https://bercksonjohnslyjeanlouis.us18.list-manage.com/subscribe/post?u=bd0755d85043060bb3d25399e&amp;id=af56b21906&amp;f_id=00d12ce7f0"
                     method="post"
@@ -48,7 +48,7 @@ const SubscribeForm = () => {
                     </div>
                 </Form>
 
-            </Container>
+            </div>
         </aside>
     );
 };

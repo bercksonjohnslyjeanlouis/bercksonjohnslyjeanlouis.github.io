@@ -10,7 +10,7 @@ const Design = () => {
     return (
         <Layout description={'Mes conceptions'} page={'Design'}>
         <section className="about section">
-            <Container className="section-inner-g">
+            <div className="section-inner-g">
                 <div className="content width-full">
                     {/*<div className="d-flex px-0 mx-0 justify-content-center align-items-center text-center pt-2 pb-4 ps-2">*/}
                     {/*    <Button*/}
@@ -62,7 +62,7 @@ const Design = () => {
 
 
                 <LinkedinButton></LinkedinButton>
-            </Container>
+            </div>
         </section>
         </Layout>
     );

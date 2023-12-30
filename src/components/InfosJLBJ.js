@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 const InfosJLBJ = () => {
     return (
         <aside className="info aside section">
-            <Container className="section-inner shadow-sm rounded">
+            <div className="section-inner shadow-sm rounded">
                 <h2 className="heading sr-only">Contact</h2>
                 <div className="content">
                     <ul className="list-unstyled">
@@ -39,7 +39,7 @@ const InfosJLBJ = () => {
                         </li>
                     </ul>
                 </div>
-            </Container>
+            </div>
         </aside>
     );
 };
