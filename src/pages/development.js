@@ -75,7 +75,6 @@ const Development = () => {
                             VOIR PLUS DE PROJETS +
                         </Button>
                     </div>
-
                    <LinkedinButton></LinkedinButton>
                 </div>
             </div>
