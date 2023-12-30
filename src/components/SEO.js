@@ -8,7 +8,7 @@ import "../assets/css/styles1.css"
 
 const SEO = ({title, description, image, url, icon }) => {
     return(
-        <style></style>
+        <title>{title}</title>
     )
 }
 
