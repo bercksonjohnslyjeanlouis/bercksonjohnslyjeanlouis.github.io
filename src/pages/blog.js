@@ -12,8 +12,7 @@ const Blog = () => {
     };
 
     return (
-        <Layout>
-            <Hero page={'BLOG'} description={"Les articles que j'ai ecrtits..."}></Hero>
+        <Layout page={'BLOG'} description={"Les articles que j'ai ecrtits..."}>
         <section className="about section">
             <div className="section-inner-g">
                 <div className="content">

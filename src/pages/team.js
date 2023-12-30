@@ -14,8 +14,8 @@ const Team = () => {
     }
 
     return (
-        <Layout>
-            <Hero page={'Collaborateurs'}  description={'Mes Collaborateurs'}></Hero>
+        <Layout page={'Collaborateurs'}  description={'Mes Collaborateurs'}>
+
         <section className="about section">
             <div className="section-inner-g">
                 <div className="content">

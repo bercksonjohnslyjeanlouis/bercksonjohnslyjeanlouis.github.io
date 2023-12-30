@@ -6,8 +6,7 @@ import Hero from "../components/Hero";
 
 const Services = () => {
     return (
-        <Layout>
-            <Hero page={'SERVICES'} description={'Mes services...'}></Hero>
+        <Layout page={'SERVICES'} description={'Mes services...'}>
         <section className="about section">
             <div className="section-inner-g">
                 <div className="content">

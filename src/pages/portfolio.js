@@ -7,8 +7,8 @@ import portfolio from "../data/fr/portfolio.json"
 
 const Portfolio = () => {
     return (
-        <Layout>
-            <Hero page={'PORTFOLIO'} description={'Mes realisations...'}></Hero>
+        <Layout page={'PORTFOLIO'} description={'Mes realisations...'}>
+
         <section className="about section">
             <div className="section-inner-g">
                 <div className="content">
