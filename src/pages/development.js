@@ -4,6 +4,7 @@ import projects from "../data/fr/projects.json"
 import LinkedinButton from "../components/LinkedinButton";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
+import SEO from "../components/SEO";
 
 
 const Development = () => {
@@ -11,7 +12,7 @@ const Development = () => {
     const [visibleProjects, setVisibleProjects] = React.useState(4);
 
     return (
-        <Layout>
+        <Layout description={'Mes projets...'} page={'PROJETS'}>
         <section className="about section">
             <div className="section-inner-g">
                 <div className="content width-full">
@@ -84,3 +85,4 @@ const Development = () => {
 };
 
 export default Development;
+export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>

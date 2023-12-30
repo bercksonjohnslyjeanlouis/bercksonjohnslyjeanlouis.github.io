@@ -5,6 +5,7 @@ import LinkedinButton from "../components/LinkedinButton";
 import {GatsbyImage, getImage, StaticImage} from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
+import SEO from "../components/SEO";
 
 const Team = () => {
 
@@ -65,3 +66,4 @@ const Team = () => {
 };
 
 export default Team;
+export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>

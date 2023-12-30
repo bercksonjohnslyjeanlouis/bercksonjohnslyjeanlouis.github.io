@@ -3,6 +3,7 @@ import { Card, Button, Row, Col } from 'react-bootstrap';
 import posts from '../data/fr/posts.json'
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
+import SEO from "../components/SEO";
 
 const Blog = () => {
     const [visiblePosts, setVisiblePosts] = useState(4);
@@ -75,3 +76,6 @@ const Blog = () => {
 };
 
 export default Blog;
+
+
+export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>

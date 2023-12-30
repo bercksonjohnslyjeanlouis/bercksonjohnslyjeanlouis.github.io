@@ -1,24 +1,14 @@
 import * as React from "react"
-import Layout from "../components/Layout";
-import events from "../data/fr/events.json";
+import About from "./about";
+import SEO from "../components/SEO";
 
-const Event = () => {
-    return (
-        <Layout>
-            <div>
-                <h1>Event</h1>
-                <ul>
-                    {events.map((event, index) => {
-                        return <li>
-                            {event.description}
-                        </li>
-                    })}
-                </ul>
-            </div>
-        </Layout>
+
+const Index = () => {
+    return(
+        <About></About>
     )
 }
 
-export default Event
+export default Index
 
-export const Head = () => <title>Event</title>
+export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>

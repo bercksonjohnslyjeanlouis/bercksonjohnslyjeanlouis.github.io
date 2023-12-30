@@ -3,6 +3,7 @@ import services from "../data/fr/services.json"
 import { Card, Button, Row, Col } from 'react-bootstrap';
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
+import SEO from "../components/SEO";
 
 const Services = () => {
     return (
@@ -52,3 +53,4 @@ const Services = () => {
 };
 
 export default Services;
+export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>

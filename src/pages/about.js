@@ -16,4 +16,4 @@ const About = () => {
 
 export default About
 
-export const Head = () => <SEO title={'ABOUT'} ></SEO>
+export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>

@@ -1,5 +1,6 @@
 import * as React from "react"
 import About from "./about";
+import SEO from "../components/SEO";
 
 
 const Index = () => {
@@ -10,4 +11,4 @@ const Index = () => {
 
 export default Index
 
-export const Head = () => <title>HOME</title>
+export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>

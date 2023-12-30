@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import LinkedinButton from "../components/LinkedinButton";
 import portfolio from "../data/fr/portfolio.json"
+import SEO from "../components/SEO";
 
 const Portfolio = () => {
     return (
@@ -53,3 +54,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>

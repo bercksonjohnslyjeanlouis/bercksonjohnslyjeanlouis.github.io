@@ -1,24 +1,14 @@
 import * as React from "react"
-import Layout from "../components/Layout";
-import photos from "../data/fr/photos.json";
+import About from "./about";
+import SEO from "../components/SEO";
 
-const Photo = () => {
-    return (
-        <Layout>
-            <div>
-                <h1>photo</h1>
-                <ul>
-                    {photos.map((photo, index) => {
-                        return <li>
-                            {photo.description}
-                        </li>
-                    })}
-                </ul>
-            </div>
-        </Layout>
+
+const Index = () => {
+    return(
+        <About></About>
     )
 }
 
-export default Photo
+export default Index
 
-export const Head = () => <title>photo</title>
+export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>

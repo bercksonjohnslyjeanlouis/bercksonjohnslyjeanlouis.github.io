@@ -1,24 +1,14 @@
 import * as React from "react"
-import Layout from "../components/Layout";
-import testimonials from "../data/fr/testimonials.json";
+import About from "./about";
+import SEO from "../components/SEO";
 
-const Testimonial = () => {
-  return (
-      <Layout>
-        <div>
-          <h1>Témoignages</h1>
-          <ul>
-            {testimonials.map((testimonial, index) => {
-              return <li>
-                {testimonial.comment}
-              </li>
-            })}
-          </ul>
-        </div>
-      </Layout>
-  )
+
+const Index = () => {
+    return(
+        <About></About>
+    )
 }
 
-export default Testimonial
+export default Index
 
-export const Head = () => <title>Témoignages</title>
+export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>

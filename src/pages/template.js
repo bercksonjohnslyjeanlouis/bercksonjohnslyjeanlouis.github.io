@@ -1,36 +1,14 @@
 import * as React from "react"
-import {graphql, Link} from "gatsby"
-import options from "../data/fr/menu.json";
+import About from "./about";
+import SEO from "../components/SEO";
 
-const Page = ({ data }) => {
-    return (
-        <div>
-            <ul>
-                {data.allSitePage.edges.map((option, index) => {
-                    return <li>
-                        <Link to={option.node.path}>
-                            {option.node.path}
-                        </Link>
-                    </li>
-                })}
-            </ul>
-    </div>
+
+const Index = () => {
+    return(
+        <About></About>
     )
-
 }
 
-export const query = graphql`
-  query {
-    allSitePage {
-      edges {
-        node {
-          id
-          matchPath
-          path
-        }
-      }
-    }
-  }
-`
+export default Index
 
-export default Page
+export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>
