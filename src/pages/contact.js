@@ -35,4 +35,4 @@ const SuccessMessage = () => {
 
 export default SuccessMessage;
 
-export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>
+export const Head = () => <SEO title={'Contact'} description={'Contact'} ></SEO>

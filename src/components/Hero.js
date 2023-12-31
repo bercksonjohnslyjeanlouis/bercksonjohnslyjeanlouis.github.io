@@ -1,6 +1,4 @@
 import React from "react";
-import options from "../data/fr/menu.json"
-import {Link} from "gatsby";
 
 const Hero = ({page,description}) => {
     return (

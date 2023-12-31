@@ -9,6 +9,7 @@ const Experience = () => {
     return (
         <>
         <section className="experience section">
+            <div className="section-inner-g">
                <div style={{ textAlign:'justify', marginBottom:'20px'}} className="mb-4">
                    Je suis étudiant finissant en Sciences Informatiques et certifié en Sciences de Gestion.
                    Passionné par les TIC, je passe la plupart de mon temps sur un ordinateur portableet je pourrais même me
@@ -19,7 +20,7 @@ const Experience = () => {
             <div>
             <h2 className="heading">EXPERIENCES</h2>
             <div className="deco"></div>
-
+<div className="content">
                 {experiences.map((experience) => (
                     <div key={experience.id} className="content item" style={{ textAlign: 'justify' }} id="experience">
                         <h3 className="title">
@@ -43,6 +44,9 @@ const Experience = () => {
                     </div>
                     )
                 ) }
+</div>
+            </div>
+
             </div>
         </section>
         </>
