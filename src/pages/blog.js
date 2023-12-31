@@ -13,7 +13,7 @@ const Blog = () => {
     };
 
     return (
-        <Layout page={'BLOG'} description={"Les articles que j'ai ecrtits..."}>
+        <Layout page={'BLOG'} description={"Les articles que j'ai écrits..."}>
         <section className="about section">
             <div className="section-inner-g">
                 <div className="content">
@@ -50,23 +50,25 @@ const Blog = () => {
                     </Row>
 
                     <div className="my-3 d-flex justify-content-center align-items-center text-center">
+                        {visiblePosts < posts.length && (
                         <Button
-                            style={{display : (visiblePosts >= posts.length) ? 'none' : 'block'}}
                             className="btn btn-cta-primary"
                             onClick={loadMorePosts}
                         >
                             VOIR PLUS D'ARTICLES +
                         </Button>
+                            )}
                     </div>
 
                     <div className="my-3 d-flex justify-content-center align-items-center text-center">
+                        {visiblePosts >= posts.length && (
                         <a
                             href="https://www.linkedin.com/newsletters/berckson-johnsly-jean-louis-7029083089146400768"
                             className="btn btn-cta-primary"
-                            style={{ display: visiblePosts >= posts.length ? 'block' : 'none' }}
                         >
                             ABONNEZ-VOUS À MON BLOG
                         </a>
+                            )}
                     </div>
                 </div>
             </div>
@@ -78,4 +80,4 @@ const Blog = () => {
 export default Blog;
 
 
-export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>
+export const Head = () => <SEO title={'Articles'} description={"Les articles que j'ai écrits..."}></SEO>

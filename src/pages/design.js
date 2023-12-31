@@ -8,7 +8,7 @@ import SEO from "../components/SEO";
 const Design = () => {
 
     return (
-        <Layout description={'Mes conceptions'} page={'Design'}>
+        <Layout description={'Mes conceptions...'} page={'DESIGN'}>
         <section className="about section">
             <div className="section-inner-g">
                 <div className="content width-full">
@@ -59,8 +59,6 @@ const Design = () => {
                     </Row>
                 </div>
 
-
-
                 <LinkedinButton></LinkedinButton>
             </div>
         </section>
@@ -69,4 +67,4 @@ const Design = () => {
 };
 
 export default Design;
-export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>
+export const Head = () => <SEO title={'Conceptions'} description={'Mes conceptions...'}></SEO>

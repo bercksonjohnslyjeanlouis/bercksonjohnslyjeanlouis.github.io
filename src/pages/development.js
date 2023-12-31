@@ -3,7 +3,6 @@ import { Card, Button, Row, Col } from 'react-bootstrap';
 import projects from "../data/fr/projects.json"
 import LinkedinButton from "../components/LinkedinButton";
 import Layout from "../components/Layout";
-import Hero from "../components/Hero";
 import SEO from "../components/SEO";
 
 
@@ -41,7 +40,7 @@ const Development = () => {
                                                 <span className="d-block text-muted pt-2">{project.description}</span>
                                             </div>
                                             <div className="text-center pt-3 pb-2">
-                                                <Button className="btn-1 btn-cta-primary-1" href={project.link}>
+                                                <Button style={{color:'white'}} className="btn-1 btn-cta-primary-1" href={project.link}>
                                                     EN SAVOIR PLUS SUR CE PROJET
                                                 </Button>
                                             </div>
@@ -69,14 +68,19 @@ const Development = () => {
                     ))}
 
                     <div className="my-3 d-flex justify-content-center align-items-center text-center">
-                        <Button
+                        {visibleProjects < projects.length && (
+                        <Button style={{color:'white'}}
                             className="btn btn-cta-primary"
                             onClick={() => setVisibleProjects((prev) => prev + 4)}
                         >
                             VOIR PLUS DE PROJETS +
                         </Button>
+                            )}
                     </div>
+                    {visibleProjects >= projects.length && (
                    <LinkedinButton></LinkedinButton>
+                        )}
+
                 </div>
             </div>
         </section>
@@ -85,4 +89,4 @@ const Development = () => {
 };
 
 export default Development;
-export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>
+export const Head = () => <SEO title={'Projets'} description={'Mes projets...'} ></SEO>

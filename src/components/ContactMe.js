@@ -27,7 +27,7 @@ const ContactMe = () => {
             <Form.Control as="textarea" name="message" required placeholder="Message" rows={5} className="mb-3" />
           </Form.Group>
 
-          <input type="hidden" name="redirect" value="https://bercksonjohnslyjeanlouis.github.io/contact.html" />
+          <input type="hidden" name="redirect" value="https://bercksonjohnslyjeanlouis.github.io/contact" />
 
           <Button type="submit" style={{ width: '100%' }} className="btn btn-cta-primary mt-3">
             Écrivez-moi un message

@@ -10,6 +10,7 @@ import BackTop from "./BackTop";
 import '../assets/plugins/fontawesome/css/all.css'
 import '../assets/plugins/bootstrap@5.3.2/dist/css/bootstrap.min.css'
 import '../assets/css/styles1.css'
+import '../assets/css/events.css'
 import '../assets/plugins/devicon/devicon-base.css'
 import '../assets/plugins/animate/animate.css'
 import '../assets/plugins/devicon/devicon.min.css'

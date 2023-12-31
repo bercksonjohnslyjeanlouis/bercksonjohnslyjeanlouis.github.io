@@ -16,7 +16,6 @@ const Portfolio = () => {
                     <Row style={{ display: 'flex', flexWrap: 'wrap' }}>
                         {portfolio.map((service, index) => (
 
-
                             <Col key={index} md={6} className="mx-0 mx-1 mb-3 align-items-center d-flex justify-content-center align-items-center text-center">
                                 <Card>
                                     <div>
@@ -33,7 +32,7 @@ const Portfolio = () => {
                                                     <span className="text-reset">{service.category}</span>
                                                 </h5>
                                                 <p style={{ textAlign: 'center' }}>
-                                                    <Button variant="cta-primary-1" href={service.link}>
+                                                    <Button style={{color:'white'}} variant="cta-primary-1" href={service.link}>
                                                         Voir les détails
                                                     </Button>
                                                 </p>
@@ -46,6 +45,7 @@ const Portfolio = () => {
                     </Row>
 
                     <LinkedinButton></LinkedinButton>
+
                 </div>
             </div>
         </section>

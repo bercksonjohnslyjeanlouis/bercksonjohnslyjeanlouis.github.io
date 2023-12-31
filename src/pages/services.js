@@ -28,7 +28,7 @@ const Services = () => {
                                                 </h5>
                                                 <p>{service.description}</p>
                                                 <p style={{ textAlign: 'center' }}>
-                                                    <Button variant="cta-primary-1" href={service.link}>
+                                                    <Button style={{color:'white'}} className="btn btn-cta-primary-1" href={service.link}>
                                                         Commandez maintenant
                                                     </Button>
                                                 </p>

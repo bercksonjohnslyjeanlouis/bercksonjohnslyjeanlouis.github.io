@@ -15,7 +15,7 @@ const Team = () => {
     }
 
     return (
-        <Layout page={'Collaborateurs'}  description={'Mes Collaborateurs'}>
+        <Layout page={'Collaborateurs'}  description={'Mes Collaborateurs...'}>
 
         <section className="about section">
             <div className="section-inner-g">
@@ -66,4 +66,4 @@ const Team = () => {
 };
 
 export default Team;
-export const Head = () => <SEO title={'Berckson Johnsly JEAN-LOUIS'} ></SEO>
+export const Head = () => <SEO title={'Collaborateurs'} description={'Mes collaborateurs...'}></SEO>
