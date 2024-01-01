@@ -1,6 +1,21 @@
 [
   {
     "id": 6,
+    "title": "Mes vingt-trois raisons pour dire un bel adieu à 2023",
+    "content": "This is the content of post 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "author": "Author 1",
+    "date": "31-12-2023",
+    "image": "/images/posts/raisons_2023.jpg",
+    "source": "LinkedIn",
+    "summary": "En repensant à toutes les choses, bonnes ou mauvaises, que j’ai vécues au cours de cette année ; je me suis rendu compte que 2023 n’avait été en fait une année ni trop longue, ni trop courte pour moi, mais une année riche en expériences, échecs, succès, apprentissages etc. Une année que je peux résumer en vingt-trois points ! Merci à Dieu, merci à la vie et merci à chaque personne ou institution, qui d’une manière ou d’une autre, a contribué à faire de cette année ce qu’elle a été pour moi. Joyeuse période de fêtes, je souhaite à tous du courage, de la motivation et du succès infini pour l’année 2024 ! ",
+    "link": "https://www.linkedin.com/pulse/mes-vingt-trois-raisons-pour-dire-un-bel-adieu-%25C3%25A0-2023-jean-louis-iizoe/?trackingId=KvK3Qtb5TzuZnsCdvhibVg%3D%3D",
+    "icon": "fa-brands fa-linkedin",
+    "tags": ["Haiti","Newyear2024", "Thankful", "Live", "Success"],
+    "category": "LIFE",
+    "language": "Français"
+  },
+  {
+    "id": 6,
     "title": "Desanm 2023 : koudèy sou rapò moun ak teknoloji",
     "content": "This is the content of post 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "author": "Author 1",

@@ -3,7 +3,7 @@ import React from 'react';
 const SEO = ({ title, description, url }) => {
      return (
      <>
-         <title>{title+' - Berckson Johnsly JEAN-LOUIS'}></title>
+         <title>{title+' - Berckson Johnsly JEAN-LOUIS'}</title>
          <meta name="description" content={description} />
          <meta name="image" content={'../../images/main/berckson.jpg'} />
          <link rel="shortcut icon" href={'../../images/main/favicon.jpg'} />
@@ -11,7 +11,6 @@ const SEO = ({ title, description, url }) => {
          <link rel={"stylesheet" } href={"../assets/css/styles1.css"} />
          <script defer src="../assets/plugins/fontawesome/js/all.js"></script>
 
-         {/* Open Graph */}
          <meta property="og:title" content={title} />
          <meta property="og:description" content={description} />
          <meta property="og:image" content={'../../images/main/berckson.jpg'} />

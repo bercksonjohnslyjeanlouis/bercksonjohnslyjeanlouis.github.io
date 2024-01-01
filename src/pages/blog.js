@@ -43,6 +43,11 @@ const Blog = () => {
                                                 </React.Fragment>
                                             ))}
                                         </p>
+                                        <div className="card-text d-flex justify-content-between text-muted">
+                                            <Col><i className="fa-solid fa-folder"></i>&nbsp;<small>{` ${post.category}`}</small></Col>
+                                            <Col><i className={post.icon}></i>&nbsp;<small>{` ${post.source}`}</small></Col>
+                                            <Col><i className="fas fa-calendar-alt"></i>&nbsp;<small>{` ${post.date}`}</small></Col>
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </Col>

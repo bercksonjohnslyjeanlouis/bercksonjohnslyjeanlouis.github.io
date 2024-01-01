@@ -29,6 +29,32 @@
                 }
           ]
   },
+
+  {
+    "id" : 4,
+    "profile": "Psychoéducateur / Psychologue stagiaire, Massothérapeute, Animateur d'atelier de production littéraire et scientifique (créole, français) PLEZIYIS",
+    "name": "Edens HENRISSE",
+    "photo": "/images/team/edens.jpg",
+    "about" : "C'est l'un de mes collaborateurs. Je dirai prochainement comment il m'aide avec ma profession...",
+    "networks" : [
+      {
+        "icon":"fab fa-twitter",
+        "link": "https://twitter.com/ed_henrisse?t=3_0d5XEAPIbLA2J06df7FQ&s=09"
+      },
+      {
+        "icon":"fab fa-linkedin-in",
+        "link": "https://www.linkedin.com/in/edens-mesye-h-henrisse"
+      }, {
+        "icon":"fab fa-facebook-f",
+        "link": "https://www.facebook.com/edens.henrisse.1?mibextid=ZbWKwL"
+      }, {
+        "icon":"fab fa-instagram",
+        "link": "https://www.instagram.com/edhenrisse?igsh=OGQ5ZDc2ODk2ZA=="
+      }
+    ]
+  },
+
+
   {
     "id" : 4,
     "profile": "Journaliste , Photographe, activiste climatique, Juriste, Géographe et Aménageur",
