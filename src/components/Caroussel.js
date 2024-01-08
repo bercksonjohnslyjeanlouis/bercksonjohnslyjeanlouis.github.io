@@ -39,21 +39,21 @@ export default function Styled() {
                 onSlide={slideChanged}
             >
                 <MDBCarouselInner ref={carouselInner} className="rounded-3 shadow-1-strong">
-                    <MDBCarouselItem className="active">
+                    <MDBCarouselItem className="active" itemId={}>
                         <MDBCarouselElement
                             src="https://mdbootstrap.com/img/Photos/Slides/img%20(88).webp"
                             alt="..."
                         />
                     </MDBCarouselItem>
 
-                    <MDBCarouselItem>
+                    <MDBCarouselItem itemId={}>
                         <MDBCarouselElement
                             src="https://mdbootstrap.com/img/Photos/Slides/img%20(121).webp"
                             alt="..."
                         />
                     </MDBCarouselItem>
 
-                    <MDBCarouselItem>
+                    <MDBCarouselItem itemId={}>
                         <MDBCarouselElement
                             src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).webp"
                             alt="..."
@@ -70,7 +70,7 @@ export default function Styled() {
                         <img
                             className="d-block w-100 img-fluid shadow-1-strong rounded"
                             src="https://mdbootstrap.com/img/Photos/Slides/img%20(88).webp"
-                        />
+                         alt={}/>
                     </button>
                     <button
                         className={`carousel-indicator ${currentSlide === 1 ? "active" : ""}`}
@@ -80,7 +80,7 @@ export default function Styled() {
                         <img
                             className="d-block w-100 img-fluid shadow-1-strong rounded"
                             src="https://mdbootstrap.com/img/Photos/Slides/img%20(121).webp"
-                        />
+                         alt={}/>
                     </button>
                     <button
                         className={`carousel-indicator ${currentSlide === 2 ? "active" : ""}`}
@@ -90,7 +90,7 @@ export default function Styled() {
                         <img
                             className="d-block w-100 img-fluid shadow-1-strong rounded"
                             src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).webp"
-                        />
+                         alt={}/>
                     </button>
                 </div>
             </MDBCarousel>
