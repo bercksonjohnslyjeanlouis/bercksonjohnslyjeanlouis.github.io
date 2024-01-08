@@ -8,6 +8,8 @@ import ContactMe from "./ContactMe";
 import BackTop from "./BackTop";
 
 import '../assets/plugins/fontawesome/css/all.css'
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import '../assets/plugins/bootstrap@5.3.2/dist/css/bootstrap.min.css'
 import '../assets/css/styles1.css'
 import '../assets/css/events.css'
