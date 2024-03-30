@@ -9,7 +9,6 @@ import SEO from "../components/SEO";
 
 const Team = () => {
 
-
     const MyImage=({src})=> {
         getImage(src)
     }
@@ -23,37 +22,45 @@ const Team = () => {
                     <Row className="d-flex gap-3">
                         {team.map((person, index) => (
 
-                            <Col key={index} md={6} className="p-0 mb-4 animate-box">
-                                <Card data-animate-effect="fadeInLeft">
-                                    <a href={person.link} className="m-0 p-0">
-                                        <Card.Img className={'card-img-top m-0 p-0'}
-                                            title={person.name}
-                                            src={'../../'+person.photo}
-                                            alt={person.name}
-                                        />
-                                    </a>
-                                    <Card.Body>
-                                        <h5 className="card-title">{person.name}</h5>
-                                        <p style={{ marginTop: '-10px', marginBottom: '10px' }}>
-                                            <em>{person.profile}</em>
-                                        </p>
-                                        <div style={{ marginTop: '15px' }} className="deco"></div>
-                                        <p className="card-text text-justify" style={{ textAlign: 'justify', marginTop: '-10px' }}>
-                                            {person.about}
-                                        </p>
-                                        <hr />
-                                        <div className="card-text d-flex justify-content-center align-items-center text-center text-muted">
-                                            {person.networks.map((network, networkIndex) => (
-                                                <div key={networkIndex} className="mx-2">
-                                                    <a href={network.link}>
-                                                        <i className={network.icon}></i>
-                                                    </a>
+                            <div className="col-xs-12 col-sm-6 col-md-4" key={index}>
+                                <div className="image-flip" onTouchStart="this.classList.toggle('hover');">
+                                    <div className="mainflip">
+                                        <div className="frontside">
+                                            <div className="card">
+                                                <div className="card-body text-center">
+                                                    <p>
+                                                        <img className="img-fluid"
+                                                             title={person.name}
+                                                             src={'../../'+person.photo}
+                                                             alt={person.name} />
+                                                        </p>
+                                                    <h4 className="card-title">{person.name}</h4>
+                                                    <p className="card-text">{person.profile}</p>
+                                                    <a className="btn btn-1">+</a>
                                                 </div>
-                                            ))}
+                                            </div>
                                         </div>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
+                                        <div className="backside">
+                                            <div className="card">
+                                                <div className="card-body text-center mt-4">
+                                                    <h4 className="card-title">{person.name}</h4>
+                                                    <p className="card-text">{person.about}</p>
+                                                    <ul className="list-inline">
+                                                        {person.networks.map((network, networkIndex) => (
+                                                        <li className="list-inline-item" key={networkIndex}>
+                                                            <a className="social-icon text-xs-center" target="_blank"
+                                                               href={network.link}>
+                                                                <i className={network.icon}></i>
+                                                            </a>
+                                                        </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         ))}
                     </Row>
 
